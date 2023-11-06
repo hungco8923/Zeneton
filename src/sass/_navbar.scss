@@ -8,10 +8,10 @@
   box-sizing: border-box;
   color: #000;
   z-index: 1;
-  background-color: transparent;
-  transition: background-color 0.3s ease-in-out;
+  background-color: #fff;
+  transition: background-color 0.5s ease-in-out;
   top: 0;
-  transition: top 0.3s ease;
+  transition: top 0.3s ease-in-out;
 
   > div {
     width: 33.3%;
@@ -72,6 +72,6 @@
 }
 
 .navbar:hover {
-  background-color: #fff;
+  background-color: #fff !important;
   transition: background-color 0.3s ease-in-out;
 }

@@ -4,15 +4,21 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 
-var prevScrollPos = window.pageYOffset;
-console.log(prevScrollPos);
+let prevScrollPos = window.pageYOffset;
+console.log(window.top.top.length);
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
 
-  if (prevScrollPos > currentScrollPos) {
+  if (currentScrollPos < 100) {
+    document.getElementById("navbar").style.backgroundColor = "white";
+  } else {
+    document.getElementById("navbar").style.backgroundColor = "transparent";
+  }
+
+  if (prevScrollPos >= currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-78px";
+    document.getElementById("navbar").style.top = "-79px";
   }
   prevScrollPos = currentScrollPos;
 };
