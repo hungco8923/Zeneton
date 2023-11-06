@@ -3,7 +3,8 @@ import "./App.css";
 import "./sass/styles.scss";
 import "normalize.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 function App() {
   const type = ["boxers", "briefs"];
@@ -17,6 +18,7 @@ function App() {
           <Route path=":type" element={<Products />} />
         </Route> */}
       </Routes>
+      <Footer />
     </div>
   );
 }
