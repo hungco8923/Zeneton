@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import "./App.css";
 import "./sass/styles.scss";
+import "normalize.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 
