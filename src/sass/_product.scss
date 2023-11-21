@@ -1,0 +1,17 @@
+.product {
+  &__carousel {
+    width: 100%;
+    height: 75vh;
+    background-image: url("../resources/img/Product1.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__list {
+    background-color: black;
+    margin-top: 100px;
+    color: white;
+    padding: 10px;
+  }
+}
