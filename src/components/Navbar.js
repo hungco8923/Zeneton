@@ -26,39 +26,41 @@ window.onscroll = function() {
 const Navbar = () => {
   return (
     <div className="navbar" id="navbar">
-      <div className="navbar__menu">
-        <div className="navbar__menu__items">
+      <div className="navbar__list container">
+        <div className="navbar__list__menu">
+          <div className="navbar__list__menu__items">
+            <Link to="/" class="hover-underline-animation">
+              Home
+            </Link>
+          </div>
+          <div className="navbar__list__menu__items">
+            <Link to="products/briefs" class="hover-underline-animation">
+              Briefs
+            </Link>
+          </div>
+          <div className="navbar__list__menu__items">
+            <Link to="products/boxers" class="hover-underline-animation">
+              Boxers
+            </Link>
+          </div>
+          <div className="navbar__list__menu__items">
+            <Link to="about-us" class="hover-underline-animation">
+              About Us
+            </Link>
+          </div>
+        </div>
+        <div className="navbar__list__logo">
           <Link to="/" class="hover-underline-animation">
-            Home
+            <img src={Logo} alt="" />
           </Link>
         </div>
-        <div className="navbar__menu__items">
-          <Link to="products/briefs" class="hover-underline-animation">
-            Briefs
-          </Link>
-        </div>
-        <div className="navbar__menu__items">
-          <Link to="products/boxers" class="hover-underline-animation">
-            Boxers
-          </Link>
-        </div>
-        <div className="navbar__menu__items">
-          <Link to="about-us" class="hover-underline-animation">
-            About Us
-          </Link>
-        </div>
-      </div>
-      <div className="navbar__logo">
-        <Link to="/" class="hover-underline-animation">
-          <img src={Logo} alt="" />
-        </Link>
-      </div>
-      <div className="navbar__ultilities">
-        <div className="navbar__ultilities__items">
-          <FontAwesomeIcon icon={faUser} />
-        </div>
-        <div className="navbar__ultilities__items">
-          <FontAwesomeIcon icon={faCartShopping} />
+        <div className="navbar__list__ultilities">
+          <div className="navbar__list__ultilities__items">
+            <FontAwesomeIcon icon={faUser} />
+          </div>
+          <div className="navbar__list__ultilities__items">
+            <FontAwesomeIcon icon={faCartShopping} />
+          </div>
         </div>
       </div>
     </div>
