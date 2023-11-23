@@ -3,6 +3,9 @@
 
   &__title {
     text-align: left;
+    h1 {
+      text-transform: capitalize;
+    }
   }
   &__carousel {
     width: 100%;
@@ -56,6 +59,23 @@
       width: 70%;
       text-align: left;
       padding-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .product {
+    &__carousel {
+      flex-direction: column;
+
+      div {
+        width: 100%;
+        height: 100%;
+      }
+
+      &__img {
+        display: none;
+      }
     }
   }
 }

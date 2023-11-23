@@ -3,7 +3,7 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  color: #000;
+  color: #133955;
   z-index: 1;
   background-color: #fff;
   transition: background-color 0.5s ease-in-out;
@@ -51,6 +51,10 @@
       }
     }
 
+    &__icon {
+      display: none;
+    }
+
     &__ultilities {
       width: 33.3%;
 
@@ -67,7 +71,7 @@
       width: 33.3%;
 
       img {
-        height: 20px;
+        height: 35px;
         width: auto;
       }
     }
@@ -77,4 +81,78 @@
 .navbar:hover {
   background-color: #fff !important;
   transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 960px) {
+  .navbar__list {
+    &__icon {
+      font-size: 1rem;
+      padding-left: 20px;
+      text-align: left;
+      display: block;
+      cursor: pointer;
+      width: 33.3%;
+    }
+
+    &__menu {
+      position: absolute;
+      left: 0px;
+      flex-direction: column;
+      top: 80px;
+      background-color: #fff;
+      width: 0px;
+      height: 100vh;
+      transition: all 0.3s ease-in;
+      overflow: hidden;
+      align-items: flex-start;
+
+      &__items {
+        padding: 8px 30px;
+        font-size: 25px;
+      }
+    }
+
+    &__menu.active {
+      left: 0px;
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar__list {
+    &__icon {
+      font-size: 20px;
+      padding-left: 20px;
+      text-align: left;
+      display: block;
+      cursor: pointer;
+      width: 33.3%;
+    }
+
+    &__menu {
+      position: absolute;
+      left: 0px;
+      flex-direction: column;
+      top: 80px;
+      background-color: #fff;
+      width: 0px;
+      height: 100vh;
+      transition: all 0.3s ease-in;
+      overflow: hidden;
+      align-items: flex-start;
+
+      &__items {
+        padding: 8px 30px;
+        font-size: 25px;
+      }
+    }
+
+    &__menu.active {
+      left: 0px;
+      width: 100%;
+      flex-direction: column;
+    }
+  }
 }
