@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Zeneton/static/css/main.7a6d4eb2.css",
+    "main.js": "/Zeneton/static/js/main.4457ab92.js",
+    "static/js/787.7444fee6.chunk.js": "/Zeneton/static/js/787.7444fee6.chunk.js",
+    "static/media/Hero-video.mp4": "/Zeneton/static/media/Hero-video.9a0defcb10293dc5027a.mp4",
+    "static/media/Product1.jpg": "/Zeneton/static/media/Product1.82de95ea63303a3985eb.jpg",
+    "static/media/JungKook-3.jpg": "/Zeneton/static/media/JungKook-3.fa36ea932b1eaaded484.jpg",
+    "static/media/JungKook-1.webp": "/Zeneton/static/media/JungKook-1.62fc71c13555249bac78.webp",
+    "static/media/Logo.png": "/Zeneton/static/media/Logo.7efb559bd1f4ac643f80.png",
+    "static/media/JungKook-2.jpg": "/Zeneton/static/media/JungKook-2.196d072919f9d25b2859.jpg",
+    "index.html": "/Zeneton/index.html",
+    "main.7a6d4eb2.css.map": "/Zeneton/static/css/main.7a6d4eb2.css.map",
+    "main.4457ab92.js.map": "/Zeneton/static/js/main.4457ab92.js.map",
+    "787.7444fee6.chunk.js.map": "/Zeneton/static/js/787.7444fee6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a6d4eb2.css",
+    "static/js/main.4457ab92.js"
+  ]
+}
