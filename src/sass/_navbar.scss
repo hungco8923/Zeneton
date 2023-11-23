@@ -1,72 +1,79 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
   padding: 28px 20px;
-  align-items: center;
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  color: #000;
+  color: #133955;
   z-index: 1;
   background-color: #fff;
   transition: background-color 0.5s ease-in-out;
   top: 0;
   transition: top 0.3s ease-in-out;
 
-  > div {
-    width: 33.3%;
-  }
-
-  &__menu {
+  &__list {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
+    &__menu {
+      width: 33.3%;
+      display: flex;
+      justify-content: left;
+      align-items: center;
 
-    &__items {
-      font-size: 15px;
-      padding: 0 20px;
+      &__items {
+        font-size: 15px;
+        padding: 0 20px;
 
-      .hover-underline-animation {
-        color: #000;
-        text-decoration: none;
-        letter-spacing: 0.15em;
-        display: inline-block;
-        position: relative;
-        padding: 0 0 3px;
-      }
-      .hover-underline-animation:after {
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 1.5px;
-        left: 50%;
-        position: absolute;
-        background: #000;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
-      }
-      .hover-underline-animation:hover:after {
-        width: 100%;
-        left: 0;
+        .hover-underline-animation {
+          color: #000;
+          text-decoration: none;
+          letter-spacing: 0.15em;
+          display: inline-block;
+          position: relative;
+          padding: 0 0 3px;
+        }
+        .hover-underline-animation:after {
+          background: none repeat scroll 0 0 transparent;
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 1.5px;
+          left: 50%;
+          position: absolute;
+          background: #000;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0;
+        }
+        .hover-underline-animation:hover:after {
+          width: 100%;
+          left: 0;
+        }
       }
     }
-  }
 
-  &__ultilities {
-    display: flex;
-    justify-content: right;
-
-    > div {
-      width: 5%;
-      margin: 0 5px;
+    &__icon {
+      display: none;
     }
-  }
 
-  &__logo {
-    img {
-      height: 20px;
-      width: auto;
+    &__ultilities {
+      width: 33.3%;
+
+      display: flex;
+      justify-content: right;
+
+      > div {
+        width: 5%;
+        margin: 0 5px;
+      }
+    }
+
+    &__logo {
+      width: 33.3%;
+
+      img {
+        height: 35px;
+        width: auto;
+      }
     }
   }
 }
@@ -74,4 +81,79 @@
 .navbar:hover {
   background-color: #fff !important;
   transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 960px) {
+  .navbar__list {
+    &__icon {
+      font-size: 1rem;
+      padding-left: 20px;
+      text-align: left;
+      display: block;
+      cursor: pointer;
+      width: 33.3%;
+    }
+
+    &__menu {
+      position: absolute;
+      left: 0px;
+      flex-direction: column;
+      top: 80px;
+      background-color: #fff;
+      width: 0px;
+      height: 100vh;
+      transition: all 0.3s ease-in;
+      overflow: hidden;
+      align-items: flex-start;
+
+      &__items {
+        padding: 8px 30px;
+        font-size: 25px;
+      }
+    }
+
+    &__menu.active {
+      left: 0px;
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar__list {
+    &__icon {
+      font-size: 20px;
+      padding-left: 20px;
+      text-align: left;
+      display: block;
+      cursor: pointer;
+      width: 33.3%;
+    }
+
+    &__menu {
+      position: absolute;
+      left: 0px;
+      flex-direction: column;
+      top: 80px;
+      background-color: #fff;
+      width: 0px;
+      height: 100vh;
+      transition: all 0.3s ease-in;
+      overflow: hidden;
+      align-items: flex-start;
+
+      &__items {
+        padding: 8px 30px;
+        font-size: 25px;
+      }
+    }
+
+    &__menu.active {
+      left: 0px;
+      width: 100%;
+      flex-direction: column;
+      z-index: 1;
+    }
+  }
 }
